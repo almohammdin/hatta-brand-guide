@@ -1,0 +1,4 @@
+interface:
+  display_name: "تطبيق هوية حتى"
+  short_description: "تنفيذ هوية حتى للمواقع والعروض والتقارير والصور"
+  default_prompt: "استخدم $apply-hatta-brand لتطبيق هوية حتى على هذا العمل ومراجعة النتيجة."

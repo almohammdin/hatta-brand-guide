@@ -1,0 +1,62 @@
+{
+  "version": "2.0",
+  "sourceGuideCommit": "cdcd6594223742343f27bd124ae55adfe2639444",
+  "sourceNaifLogoBlob": "a4827c00739ff9a173065888802ba57e99dc6231",
+  "method": "Exact bytes extracted from the existing guide. No logo or font redrawing.",
+  "logos": [
+    "assets/hatta-logo.webp",
+    "assets/hatta-mark.webp",
+    "assets/naif-signature.webp"
+  ],
+  "fonts": [
+    {
+      "family": "El Messiri",
+      "weight": "400",
+      "path": "assets/fonts/el-messiri-400.woff2"
+    },
+    {
+      "family": "El Messiri",
+      "weight": "600",
+      "path": "assets/fonts/el-messiri-600.woff2"
+    },
+    {
+      "family": "El Messiri",
+      "weight": "700",
+      "path": "assets/fonts/el-messiri-700.woff2"
+    },
+    {
+      "family": "Thmanyah Serif Display",
+      "weight": "400",
+      "path": "assets/fonts/thmanyah-serif-display-400.woff2"
+    },
+    {
+      "family": "Thmanyah Serif Display",
+      "weight": "700",
+      "path": "assets/fonts/thmanyah-serif-display-700.woff2"
+    },
+    {
+      "family": "Thmanyah Serif Display",
+      "weight": "900",
+      "path": "assets/fonts/thmanyah-serif-display-900.woff2"
+    },
+    {
+      "family": "Thmanyah Sans",
+      "weight": "400",
+      "path": "assets/fonts/thmanyah-sans-400.woff2"
+    },
+    {
+      "family": "Thmanyah Sans",
+      "weight": "500 600",
+      "path": "assets/fonts/thmanyah-sans-500-600.woff2"
+    },
+    {
+      "family": "Thmanyah Sans",
+      "weight": "700 900",
+      "path": "assets/fonts/thmanyah-sans-700-900.woff2"
+    }
+  ],
+  "notes": [
+    "WebP logos are raster website originals, not vector masters.",
+    "Obtain original desktop fonts from the official source and observe their licenses."
+  ]
+}

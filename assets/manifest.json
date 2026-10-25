@@ -57,6 +57,7 @@
   ],
   "notes": [
     "WebP logos are raster website originals, not vector masters.",
-    "Obtain original desktop fonts from the official source and observe their licenses."
+    "Obtain original desktop fonts from the official source and observe their licenses.",
+    "brand-marks.css presents the original white Naif signature in navy on light surfaces using its alpha mask; original artwork bytes are unchanged. The Hatta SVG viewport excludes transparent source margins while retaining a safe inset."
   ]
 }

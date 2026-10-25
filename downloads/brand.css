@@ -17,3 +17,15 @@
 .hatta-button{font:500 16px/1.5 "Thmanyah Sans",sans-serif;font-feature-settings:"salt" 0;min-height:44px;padding:10px 20px;border:1px solid var(--hatta-navy);border-radius:10px;background:var(--hatta-navy);color:white;cursor:pointer}
 .hatta-button:focus-visible{outline:3px solid var(--hatta-gold-text);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.hatta-animated{animation:none!important;transition:none!important}}
+
+/* Original artwork; the SVG viewport excludes transparent source margins. */
+.hatta-wordmark{display:block;width:224px;max-width:100%;height:auto;aspect-ratio:746/269;overflow:hidden;flex-shrink:0}
+.naif-wordmark{display:block;width:96px;max-width:100%;aspect-ratio:557/258;color:var(--navy,#061f56);flex-shrink:0}
+.naif-wordmark--light{color:#fff}
+.naif-wordmark>img{display:block;width:100%;max-width:100%;height:auto;margin:0;filter:brightness(0)}
+.naif-wordmark--light>img{filter:none}
+@supports ((mask-image:url("https://almohammdin.github.io/hatta-brand-guide/assets/naif-signature.webp")) or (-webkit-mask-image:url("https://almohammdin.github.io/hatta-brand-guide/assets/naif-signature.webp"))){
+.naif-wordmark{background-color:currentColor;-webkit-mask:url("https://almohammdin.github.io/hatta-brand-guide/assets/naif-signature.webp") center/contain no-repeat;mask:url("https://almohammdin.github.io/hatta-brand-guide/assets/naif-signature.webp") center/contain no-repeat}
+.naif-wordmark>img{opacity:0;filter:none}
+}
+@media print{.naif-wordmark{-webkit-print-color-adjust:exact;print-color-adjust:exact}}

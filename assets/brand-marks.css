@@ -1,0 +1,11 @@
+/* Original artwork; the SVG viewport excludes transparent source margins. */
+.hatta-wordmark{display:block;width:224px;max-width:100%;height:auto;aspect-ratio:746/269;overflow:hidden;flex-shrink:0}
+.naif-wordmark{display:block;width:96px;max-width:100%;aspect-ratio:557/258;color:var(--navy,#061f56);flex-shrink:0}
+.naif-wordmark--light{color:#fff}
+.naif-wordmark>img{display:block;width:100%;max-width:100%;height:auto;margin:0;filter:brightness(0)}
+.naif-wordmark--light>img{filter:none}
+@supports ((mask-image:url("naif-signature.webp")) or (-webkit-mask-image:url("naif-signature.webp"))){
+.naif-wordmark{background-color:currentColor;-webkit-mask:url("naif-signature.webp") center/contain no-repeat;mask:url("naif-signature.webp") center/contain no-repeat}
+.naif-wordmark>img{opacity:0;filter:none}
+}
+@media print{.naif-wordmark{-webkit-print-color-adjust:exact;print-color-adjust:exact}}

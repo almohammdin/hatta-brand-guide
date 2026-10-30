@@ -5,7 +5,7 @@ description: Apply Hatta Business Solutions brand identity to Arabic websites, t
 
 # تطبيق هوية حتى
 
-مرجع التنفيذ: الإصدار 2.0، بتاريخ 25-10-2026.
+مرجع التنفيذ: الإصدار 2.1، بتاريخ 29-10-2026.
 
 ## اقرأ المرجع المناسب
 
@@ -13,6 +13,9 @@ description: Apply Hatta Business Solutions brand identity to Arabic websites, t
 - اقرأ [قواعد المخرجات](references/outputs.md) بحسب نوع المهمة. النسخة المنشورة: https://almohammdin.github.io/hatta-brand-guide/skills/apply-hatta-brand/references/outputs.md
 - استخدم [القيم التصميمية](https://almohammdin.github.io/hatta-brand-guide/downloads/tokens.json) و[CSS](https://almohammdin.github.io/hatta-brand-guide/downloads/brand.css) للمواقع.
 - طابق رقم إصدار المرجع والقيم والتعليمات. إذا اختلفت، اجلب الملفات الحالية معا من الموقع نفسه. لا تخلط قواعد إصدارين.
+
+- للمواقع والأدوات اقرأ [جودة التجربة الرقمية والمهارات](references/digital-quality.md) ونفذ الفحوص الملائمة. النسخة المنشورة: https://almohammdin.github.io/hatta-brand-guide/skills/apply-hatta-brand/references/digital-quality.md
+- هذه القواعد مدمجة في مهارة حتى؛ لا يشترط تثبيت مهارات خارجية، ولا تتجاوز قواعد الهوية أو نطاق المستخدم.
 
 ## حدد النطاق
 

@@ -15,8 +15,8 @@ s=s.replace(/<a class="skip-link"[\s\S]*?<\/a>/g,"").replace(/<button\b[^>]*>[\s
 s=s.replace(/<li\b[^>]*>/g,"\n- ").replace(/<\/li>/g,"\n").replace(/<summary\b[^>]*>([\s\S]*?)<\/summary>/g,(_,t)=>"\n\n**"+clean(t)+"**\n\n");
 s=s.replace(/<img\b[^>]*>/g,"").replace(/<br\s*\/?>/g,"\n").replace(/<\/(p|div|article|section|details|ul|ol)>/g,"\n\n").replace(/<[^>]*>/g,"");
 s=clean(s).replace(/\n[ \t]+/g,"\n").replace(/\n{3,}/g,"\n\n");
-return "# دليل هوية حتى\n\nالإصدار 2.0 · 25-10-2026\n\nالمصدر: "+base+"\n\nهذا المرجع مستخرج من محتوى صفحة الدليل. استخدم معه tokens.json والأصول من الإصدار نفسه.\n\n"+s+"\n";
+return "# دليل هوية حتى\n\nالإصدار 2.1 · 29-10-2026\n\nالمصدر: "+base+"\n\nهذا المرجع مستخرج من محتوى صفحة الدليل. استخدم معه tokens.json والأصول من الإصدار نفسه.\n\n"+s+"\n";
 }
-const markdown=toMarkdown(fs.readFileSync(path.join(root,'index.html'),'utf8'));
+const markdown=toMarkdown(fs.readFileSync(path.join(root,'index.html'),'utf8')).split('\n').map(line=>line.trimEnd()).join('\n');
 for(const p of ['downloads/brand-guide.md','skills/apply-hatta-brand/references/brand-guide.md']){fs.mkdirSync(path.dirname(path.join(root,p)),{recursive:true});fs.writeFileSync(path.join(root,p),markdown);}
 console.log('Updated both Markdown references from index.html');

@@ -20,3 +20,8 @@ html{scroll-padding-top:100px}body{overflow-wrap:break-word}.wrap{max-width:1180
 .topbar{height:auto;min-height:74px}.nav{height:auto;min-height:74px}.links a:hover{color:var(--gold-text)}.links .nav-download:hover{color:white}
 @media(max-width:960px){.topbar{min-height:0}.nav{min-height:0;padding:8px 0;gap:4px}.cover{padding-top:0;min-height:calc(100svh - 110px)}.cover-grid{padding-block:56px}}
 @media(max-width:620px){.cover{min-height:auto}.cover-grid{padding-block:44px}}
+
+/* Hatta 2.1: digital quality chapter */
+.quality-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.quality-card{padding:28px;min-width:0}.quality-card h3{margin:0 0 18px;color:var(--navy);font-size:24px}.quality-card ul{margin:0;padding-inline-start:22px}.quality-card li{margin-block:12px;font-size:16px;line-height:1.85}.quality-card{break-inside:avoid}.quality-grid+.guide-note a{text-decoration:underline}
+@media(max-width:760px){.quality-grid{grid-template-columns:1fr}.quality-card{padding:22px}}
+@media print{.quality-grid{display:block}.quality-card{margin-block:16px;box-shadow:none}}

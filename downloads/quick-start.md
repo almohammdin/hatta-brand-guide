@@ -1,6 +1,6 @@
 # البدء بهوية حتى
 
-الإصدار 2.0 · 25-10-2026
+الإصدار 2.1 · 29-10-2026
 
 1. حدد النطاق: هوية كاملة، خطوط فقط، أو تطبيق مشترك. طلب الخطوط فقط لا يجيز تغيير الألوان أو إضافة الشعارات.
 2. اقرأ [المرجع الكامل](https://almohammdin.github.io/hatta-brand-guide/downloads/brand-guide.md). استخدم قواعد الإصدار وأصوله معا.
@@ -31,3 +31,7 @@
 ## أمثلة قابلة للتعديل
 
 [تقرير](https://almohammdin.github.io/hatta-brand-guide/templates/report.html) · [عرض](https://almohammdin.github.io/hatta-brand-guide/templates/presentation.html) · [صورة مشاركة](https://almohammdin.github.io/hatta-brand-guide/templates/social.html)
+
+## جودة الواجهات
+
+اقرأ [قواعد الجودة والمهارات](https://almohammdin.github.io/hatta-brand-guide/skills/apply-hatta-brand/references/digital-quality.md): الجوال، الحركة، الحالات الواقعية، العربية واللغات المدعومة وفحص التسليم.

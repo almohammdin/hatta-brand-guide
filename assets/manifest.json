@@ -1,5 +1,5 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "sourceGuideCommit": "cdcd6594223742343f27bd124ae55adfe2639444",
   "sourceNaifLogoBlob": "a4827c00739ff9a173065888802ba57e99dc6231",
   "method": "Exact bytes extracted from the existing guide. No logo or font redrawing.",

@@ -1,4 +1,4 @@
-/* Hatta 2.0 · 25-10-2026. Font URLs point to the canonical guide. */
+/* Hatta 2.1 · 29-10-2026. Font URLs point to the canonical guide. */
 @font-face{font-family:"El Messiri";font-style:normal;font-weight:400;font-display:swap;src:url("https://almohammdin.github.io/hatta-brand-guide/assets/fonts/el-messiri-400.woff2") format("woff2")}
 @font-face{font-family:"El Messiri";font-style:normal;font-weight:600;font-display:swap;src:url("https://almohammdin.github.io/hatta-brand-guide/assets/fonts/el-messiri-600.woff2") format("woff2")}
 @font-face{font-family:"El Messiri";font-style:normal;font-weight:700;font-display:swap;src:url("https://almohammdin.github.io/hatta-brand-guide/assets/fonts/el-messiri-700.woff2") format("woff2")}
@@ -29,3 +29,12 @@
 .naif-wordmark>img{opacity:0;filter:none}
 }
 @media print{.naif-wordmark{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* Opt-in interaction classes; reduced motion keeps feedback visible. */
+:root{--hatta-motion-press:140ms;--hatta-motion-ui:200ms;--hatta-motion-panel:240ms;--hatta-motion-explanation:600ms;--hatta-ease-out:cubic-bezier(.23,1,.32,1)}
+.hatta-button{min-width:44px;touch-action:manipulation;transition:transform var(--hatta-motion-press) var(--hatta-ease-out),background-color var(--hatta-motion-press) ease-out}
+.hatta-button:active:not(:disabled){transform:scale(.97);background:var(--hatta-navy-secondary)}
+@media(hover:hover) and (pointer:fine){.hatta-button:hover:not(:disabled){background:var(--hatta-navy-secondary)}}
+.hatta-input{font-family:"Thmanyah Sans",sans-serif;font-size:16px;font-feature-settings:"salt" 0;min-height:44px}
+.hatta-numeral{font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate}
+@media(prefers-reduced-motion:reduce){.hatta-button{transition:none}.hatta-button:active:not(:disabled){transform:none}.hatta-animated{scroll-behavior:auto!important}}

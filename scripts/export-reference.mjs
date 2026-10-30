@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-function toMarkdown(source){
+function toMarkdown(source, english=false){
 const clean=x=>x.replace(/<[^>]*>/g,"").replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&nbsp;/g," ").replace(/[ \t]+/g," ").trim();
 const base="https://almohammdin.github.io/hatta-brand-guide/";
 let s=source.slice(source.indexOf("<body"));
@@ -10,13 +10,21 @@ s=s.replace(/<(script|style|header|footer|nav)\b[^>]*>[\s\S]*?<\/\1>/gi,"").repl
 s=s.replace(/<table\b[^>]*>([\s\S]*?)<\/table>/g,(_,t)=>{let rows=[...t.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/g)].map(r=>[...r[1].matchAll(/<t[hd]\b[^>]*>([\s\S]*?)<\/t[hd]>/g)].map(c=>clean(c[1]).replaceAll("|","\\|")));if(!rows.length)return "";return "\n\n"+rows.map((r,i)=>"| "+r.join(" | ")+" |\n"+(i===0?"| "+r.map(()=>"---").join(" | ")+" |\n":"")).join("")+"\n";});
 s=s.replace(/<pre\b[^>]*>([\s\S]*?)<\/pre>/g,(_,x)=>"\n\n```css\n"+clean(x)+"\n```\n\n");
 s=s.replace(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/g,(_,l,t)=>"\n\n"+"#".repeat(Math.min(Number(l)+1,6))+" "+clean(t.replace(/<br\s*\/?>/g," "))+"\n\n");
-s=s.replace(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g,(_,u,t)=>{let label=clean(t);if(!label)return "";return "["+label+"]("+(/^https?:/.test(u)?u:base+u)+")";});
+s=s.replace(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g,(_,u,t)=>{let label=clean(t);if(!label)return "";return "["+label+"]("+(/^https?:/.test(u)?u:base+(english && u.startsWith("#")?"en.html":"")+u)+")";});
 s=s.replace(/<a class="skip-link"[\s\S]*?<\/a>/g,"").replace(/<button\b[^>]*>[\s\S]*?<\/button>/g,"").replace(/<\/(span|small|strong|em)>/g," ");
 s=s.replace(/<li\b[^>]*>/g,"\n- ").replace(/<\/li>/g,"\n").replace(/<summary\b[^>]*>([\s\S]*?)<\/summary>/g,(_,t)=>"\n\n**"+clean(t)+"**\n\n");
 s=s.replace(/<img\b[^>]*>/g,"").replace(/<br\s*\/?>/g,"\n").replace(/<\/(p|div|article|section|details|ul|ol)>/g,"\n\n").replace(/<[^>]*>/g,"");
 s=clean(s).replace(/\n[ \t]+/g,"\n").replace(/\n{3,}/g,"\n\n");
-return "# دليل هوية حتى\n\nالإصدار 2.1 · 29-10-2026\n\nالمصدر: "+base+"\n\nهذا المرجع مستخرج من محتوى صفحة الدليل. استخدم معه tokens.json والأصول من الإصدار نفسه.\n\n"+s+"\n";
+const tokens=JSON.parse(fs.readFileSync(path.join(root,'downloads/tokens.json'),'utf8'));
+return (english ? "# Hatta Brand Guidelines\n\nVersion " : "# دليل هوية حتى\n\nالإصدار ")+tokens.version+" · "+tokens.updated+"\n\n"+(english?"Source: ":"المصدر: ")+base+(english?"en.html":"")+"\n\n"+(english?"This reference is generated from the guide. Use it with tokens.json and assets from the same release.":"هذا المرجع مستخرج من محتوى صفحة الدليل. استخدم معه tokens.json والأصول من الإصدار نفسه.")+"\n\n"+s+"\n";
 }
 const markdown=toMarkdown(fs.readFileSync(path.join(root,'index.html'),'utf8')).split('\n').map(line=>line.trimEnd()).join('\n');
 for(const p of ['downloads/brand-guide.md','skills/apply-hatta-brand/references/brand-guide.md']){fs.mkdirSync(path.dirname(path.join(root,p)),{recursive:true});fs.writeFileSync(path.join(root,p),markdown);}
 console.log('Updated both Markdown references from index.html');
+
+const englishSource=fs.readFileSync(path.join(root,'en.html'),'utf8');
+const english=toMarkdown(englishSource,true).split('\n').map(line=>line.trimEnd()).join('\n');
+fs.writeFileSync(path.join(root,'downloads/brand-guide-en.md'),english);
+const chapter=englishSource.slice(englishSource.indexOf('<section class="section" id="digital-quality">'),englishSource.indexOf('<section class="section" id="applications">'));
+fs.writeFileSync(path.join(root,'downloads/digital-quality-en.md'),toMarkdown('<body>'+chapter+'</body>',true).replace('# Hatta Brand Guidelines','# Hatta Digital Experience Standards').split('\n').map(line=>line.trimEnd()).join('\n'));
+console.log('Updated English reference and digital quality chapter');

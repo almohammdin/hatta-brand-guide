@@ -1,6 +1,6 @@
 # Hatta brand guide
 
-Version 2.2 · 2026-10-30
+Version 2.3 � 2026-10-30
 
 Published at https://almohammdin.github.io/hatta-brand-guide/
 
@@ -20,3 +20,4 @@ Published at https://almohammdin.github.io/hatta-brand-guide/
 - English typography specimens intentionally preserve Arabic script to demonstrate the approved glyphs.
 - Language switching uses real links and preserves the section anchor with JavaScript.
 - Arabic example templates are explicitly labeled in the English guide.
+

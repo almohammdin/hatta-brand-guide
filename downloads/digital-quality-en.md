@@ -1,12 +1,12 @@
 # Hatta Digital Experience Standards
 
-Version 2.2 · 30-10-2026
+Version 2.3 � 16-11-2026
 
 Source: https://almohammdin.github.io/hatta-brand-guide/en.html
 
 This reference is generated from the guide. Use it with tokens.json and assets from the same release.
 
-12.1 · Digital Experience and Implementation Skills
+12.1 � Digital Experience and Implementation Skills
 
 ### A distinct identity. A refined experience.
 
@@ -18,15 +18,15 @@ Implementation standards for Hatta interfaces, turning design principles into pr
 
 - Start with the action the user wants to complete: a clear heading, a readable result and a defined primary action. Explain empty, loading, success and error states directly and offer a useful next step.
 
-- For materially different layouts, compare 2–3 alternatives with the same content and dimensions before adopting one. Preserve calculations, data and functionality.
+- For materially different layouts, compare 2?3 alternatives with the same content and dimensions before adopting one. Preserve calculations, data and functionality.
 
 #### Calm, responsive motion
 
 - Every animation needs a purpose: press feedback, a state change, a relationship or the origin of a panel. Remove repeated decorative motion and scroll effects that delay content.
 
-- Hatta starting values: press feedback 100–160 ms; menus and tooltips 150–220 ms; dialogs 200–280 ms. Frequent actions and keyboard shortcuts should respond without waiting for an animation.
+- Hatta starting values: press feedback 100?160 ms; menus and tooltips 150?220 ms; dialogs 200?280 ms. Frequent actions and keyboard shortcuts should respond without waiting for an animation.
 
-- Reserve 400–700 ms for an explanatory diagram or presentation scene that needs time to understand. Do not use it as the default for tool buttons or navigation.
+- Reserve 400?700 ms for an explanatory diagram or presentation scene that needs time to understand. Do not use it as the default for tool buttons or navigation.
 
 - Start promptly and settle gently using ease-out or the approved curve. Menus emerge from their trigger; centered dialogs remain centered. Avoid scaling from zero or exaggerated bounce.
 
@@ -36,7 +36,7 @@ Implementation standards for Hatta interfaces, turning design principles into pr
 
 #### Mobile and touch
 
-- Target an interaction area of at least 44 × 44 px. Show feedback as soon as touch begins, but execute actions through click to retain keyboard support. Do not trigger deletion or submission on initial touch.
+- Target an interaction area of at least 44 ? 44 px. Show feedback as soon as touch begins, but execute actions through click to retain keyboard support. Do not trigger deletion or submission on initial touch.
 
 - Limit hover effects to devices supporting a fine pointer and hover. Start mobile inputs at 16 px to reduce automatic zoom; allow user zoom and choose suitable numeric, email or phone keyboards.
 
@@ -50,7 +50,7 @@ Implementation standards for Hatta interfaces, turning design principles into pr
 
 #### Arabic and realistic data
 
-- Review Arabic in RTL and English and French in LTR when supported by the product. Isolate mixed-direction numbers, identifiers and URLs. Retain digits 0–9 as required by the guide.
+- Review Arabic in RTL and English and French in LTR when supported by the product. Isolate mixed-direction numbers, identifiers and URLs. Retain digits 0?9 as required by the guide.
 
 - Test a long Arabic name, long email, translated button label, empty optional field, missing image, zero items, one item and a realistic large count. Use plausible synthetic fixtures separate from user data.
 
@@ -82,6 +82,6 @@ Implementation standards for Hatta interfaces, turning design principles into pr
 
 - Provide a brief account of changes, checks and verification limits. Reading a skill or adding it to the guide does not prove implementation quality; acceptance depends on the actual result.
 
-Reference: [Emil Kowalski Skills ↗](https://github.com/emilkowalski/skills), reviewed 30-10-2026. These standards are rewritten and adapted for Hatta, not copied verbatim or adopted wholesale. User instructions take priority, followed by project scope and Hatta's identity. Timing values are Hatta implementation choices and may be adjusted for a documented reason. Adding this reference does not automatically install external skills.
+Reference: [Emil Kowalski Skills ?](https://github.com/emilkowalski/skills), reviewed 30-10-2026. These standards are rewritten and adapted for Hatta, not copied verbatim or adopted wholesale. User instructions take priority, followed by project scope and Hatta's identity. Timing values are Hatta implementation choices and may be adjusted for a documented reason. Adding this reference does not automatically install external skills.
 
-[Download quality and skill standards ↓](https://almohammdin.github.io/hatta-brand-guide/downloads/digital-quality-en.md)[Matching implementation resources ↘](https://almohammdin.github.io/hatta-brand-guide/en.html#resources)
+[Download quality and skill standards ?](https://almohammdin.github.io/hatta-brand-guide/downloads/digital-quality-en.md)[Matching implementation resources ?](https://almohammdin.github.io/hatta-brand-guide/en.html#resources)

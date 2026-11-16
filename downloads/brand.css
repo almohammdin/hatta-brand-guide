@@ -1,4 +1,4 @@
-/* Hatta 2.2 · 30-10-2026. Font URLs point to the canonical guide. */
+/* Hatta 2.3 � 16-11-2026. Font URLs point to the canonical guide. */
 @font-face{font-family:"El Messiri";font-style:normal;font-weight:400;font-display:swap;src:url("https://almohammdin.github.io/hatta-brand-guide/assets/fonts/el-messiri-400.woff2") format("woff2")}
 @font-face{font-family:"El Messiri";font-style:normal;font-weight:600;font-display:swap;src:url("https://almohammdin.github.io/hatta-brand-guide/assets/fonts/el-messiri-600.woff2") format("woff2")}
 @font-face{font-family:"El Messiri";font-style:normal;font-weight:700;font-display:swap;src:url("https://almohammdin.github.io/hatta-brand-guide/assets/fonts/el-messiri-700.woff2") format("woff2")}
@@ -38,3 +38,4 @@
 .hatta-input{font-family:"Thmanyah Sans",sans-serif;font-size:16px;font-feature-settings:"salt" 0;min-height:44px}
 .hatta-numeral{font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate}
 @media(prefers-reduced-motion:reduce){.hatta-button{transition:none}.hatta-button:active:not(:disabled){transform:none}.hatta-animated{scroll-behavior:auto!important}}
+

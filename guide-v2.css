@@ -25,3 +25,12 @@ html{scroll-padding-top:100px}body{overflow-wrap:break-word}.wrap{max-width:1180
 .quality-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.quality-card{padding:28px;min-width:0}.quality-card h3{margin:0 0 18px;color:var(--navy);font-size:24px}.quality-card ul{margin:0;padding-inline-start:22px}.quality-card li{margin-block:12px;font-size:16px;line-height:1.85}.quality-card{break-inside:avoid}.quality-grid+.guide-note a{text-decoration:underline}
 @media(max-width:760px){.quality-grid{grid-template-columns:1fr}.quality-card{padding:22px}}
 @media print{.quality-grid{display:block}.quality-card{margin-block:16px;box-shadow:none}}
+
+/* Editorial and type guidance, release 2.3 */
+.editorial-rules,.kashida-rules{margin-top:40px;scroll-margin-top:110px}
+.editorial-rules .section-head,.kashida-rules .section-head{margin-bottom:22px}
+.editorial-rules .section-head h3,.kashida-rules .section-head h3{font-size:clamp(24px,3vw,34px);line-height:1.45}
+.kashida-rules .guide-card ul{padding-inline-start:22px;line-height:1.9}
+.kashida-rules .guide-card li+li{margin-top:12px}
+.kashida-rules .guide-card a{color:var(--navy);text-underline-offset:4px}
+.editorial-rules .table-scroll,.kashida-rules .table-scroll{margin-top:24px}

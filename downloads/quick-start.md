@@ -1,37 +1,42 @@
-# البدء بهوية حتى
+# �頧� ���� ���
 
-الإصدار 2.2 · 30-10-2026
+�靭��� 2.3 � 16-11-2026
 
-1. حدد النطاق: هوية كاملة، خطوط فقط، أو تطبيق مشترك. طلب الخطوط فقط لا يجيز تغيير الألوان أو إضافة الشعارات.
-2. اقرأ [المرجع الكامل](https://almohammdin.github.io/hatta-brand-guide/downloads/brand-guide.md). استخدم قواعد الإصدار وأصوله معا.
-3. حمل [القيم التصميمية](https://almohammdin.github.io/hatta-brand-guide/downloads/tokens.json) و[CSS](https://almohammdin.github.io/hatta-brand-guide/downloads/brand.css) للمواقع.
-4. طبق الشخصية واللغة بما يناسب الجمهور ونوع المخرج.
-5. استخدم الأصول الأصلية. راجع تحميل الخط وتفعيل salt للعناوين الفرعية وتعطيله للنصوص والأزرار.
-6. راجع الجوال والمقاس النهائي والتباين والتصدير والروابط، وأكمل البيانات المعتمدة قبل التسليم.
+1. ��� �����: ��� ���? ���� ���? �� ���� ꬢ��. �� ����� ��� � �� ���� ����� �� ���� ��㟩��.
+2. �穚 [��ꩤ� �����](https://almohammdin.github.io/hatta-brand-guide/downloads/brand-guide.md). ������ ��� �靭��� 횭��� ��.
+3. ��� [����� �颭����](https://almohammdin.github.io/hatta-brand-guide/downloads/tokens.json) �[CSS](https://almohammdin.github.io/hatta-brand-guide/downloads/brand.css) ������.
+4. �� �鬦�� ���� �� �럫� ������ ���� ��ꦩ�.
+5. ������ �隭�� �隭��. ���� ����� ��� ������ salt ������� ����� ������� ����� �險���.
+6. ���� ���� ���矫 ���쟞� �颠��� �颭�� ��ퟠ�? ���� ���럢 ����ꧡ �� �颫���.
 
-## نطاق التنفيذ
+## ��� �����
 
-- هوية كاملة: الشعار والألوان والخطوط والنمط واللغة مع تذييل يناسب صفة العمل.
-- خطوط فقط: العائلات والأوزان والحروف البديلة؛ حافظ على بقية الهوية والوظائف.
-- مشترك: حدد الجهة الرئيسية وصفة كل شريك قبل توزيع الشعارات.
+- ��� ���: ��㟩 ����� ����� ����� ���� �� ����� �럫� �� �����.
+- ���� ���: ��㟞韢 ������ �饩�� �頧��? ���� ��� ��� ����� ���⟞�.
+- ꬢ��: ��� ��� �驞�� ��� �� ���� �� ����� ��㟩��.
 
-## أصول مباشرة
+## ���� ꠟ���
 
-- [شعار حتى](https://almohammdin.github.io/hatta-brand-guide/assets/hatta-logo.webp)
-- [علامة حتى](https://almohammdin.github.io/hatta-brand-guide/assets/hatta-mark.webp)
-- [توقيع نايف](https://almohammdin.github.io/hatta-brand-guide/assets/naif-signature.webp)
-- [النمط الفاتح](https://almohammdin.github.io/hatta-brand-guide/assets/frame-light.svg)
-- [النمط الداكن](https://almohammdin.github.io/hatta-brand-guide/assets/frame-dark.svg)
-- [المصدر الرسمي لخط ثمانية](https://font.thmanyah.com/)
+- [�㟩 ���](https://almohammdin.github.io/hatta-brand-guide/assets/hatta-logo.webp)
+- [��� ���](https://almohammdin.github.io/hatta-brand-guide/assets/hatta-mark.webp)
+- [����� ���](https://almohammdin.github.io/hatta-brand-guide/assets/naif-signature.webp)
+- [����� ��埢�](https://almohammdin.github.io/hatta-brand-guide/assets/frame-light.svg)
+- [����� �駟��](https://almohammdin.github.io/hatta-brand-guide/assets/frame-dark.svg)
+- [��ꭧ� �驫�� �� ����](https://font.thmanyah.com/)
 
-## الاستخدام مع الذكاء الصناعي
+## �韫����� �� ��蟘 �����
 
-اقرأ [تعليمات التنفيذ](https://almohammdin.github.io/hatta-brand-guide/skills/apply-hatta-brand/SKILL.md). تنزيل الملف وحده لا يثبته تلقائيا في منصة الذكاء الصناعي؛ استخدم آلية المهارات التي تدعمها منصتك أو أرفق المرجع والتعليمات ضمن المهمة.
+�穚 [����꟢ �����](https://almohammdin.github.io/hatta-brand-guide/skills/apply-hatta-brand/SKILL.md). ���� ����� ���� � �� ��矞� �� �뭡 ��蟘 �����? ������ ��� ���쟩�� ��� ����� �뭢� �� ���� ��ꩤ� �����꟢ ��� �����.
 
-## أمثلة قابلة للتعديل
+## ��� 矠� �����
 
-[تقرير](https://almohammdin.github.io/hatta-brand-guide/templates/report.html) · [عرض](https://almohammdin.github.io/hatta-brand-guide/templates/presentation.html) · [صورة مشاركة](https://almohammdin.github.io/hatta-brand-guide/templates/social.html)
+[���](https://almohammdin.github.io/hatta-brand-guide/templates/report.html) � [��](https://almohammdin.github.io/hatta-brand-guide/templates/presentation.html) � [���� ꬟��](https://almohammdin.github.io/hatta-brand-guide/templates/social.html)
 
-## جودة الواجهات
+## ���� ��ퟤ쟢
 
-اقرأ [قواعد الجودة والمهارات](https://almohammdin.github.io/hatta-brand-guide/skills/apply-hatta-brand/references/digital-quality.md): الجوال، الحركة، الحالات الواقعية، العربية واللغات المدعومة وفحص التسليم.
+�穚 [��� ����� ���쟩��](https://almohammdin.github.io/hatta-brand-guide/skills/apply-hatta-brand/references/digital-quality.md): ����? �饩�? �饟韢 ������? ��㩠� ���䟢 ������ �奭 �颫���.
+
+## ���� ���李
+
+�� [����� ��� ����](https://almohammdin.github.io/hatta-brand-guide/#writing-style) �� ���� ��ꥢ��: 렩� ����? ��韘 ���� ������ �秩 �饟��. ���� [�ퟠ� ���李](https://almohammdin.github.io/hatta-brand-guide/#kashida) ퟦ��� ������� ��� ���� ��� �颭��. ����� ����꟢ ����� �� �����? �� ����� ��� 寧�� ��� ��� ��矞�.
+

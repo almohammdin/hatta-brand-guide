@@ -1,6 +1,6 @@
 # Getting Started with Hatta
 
-Version 2.3 � 16-11-2026
+Version 2.3 · 16-11-2026
 
 1. Identify the scope: full identity, fonts only or co-branding. A fonts-only request does not authorize changing colors or adding logos.
 2. Read the [full reference](https://almohammdin.github.io/hatta-brand-guide/downloads/brand-guide-en.md). Use the standards and assets from the same release.
@@ -36,7 +36,7 @@ Read the [digital experience standards](https://almohammdin.github.io/hatta-bran
 
 The following templates are in Arabic:
 
-[Report](https://almohammdin.github.io/hatta-brand-guide/templates/report.html) � [Presentation](https://almohammdin.github.io/hatta-brand-guide/templates/presentation.html) � [Social image](https://almohammdin.github.io/hatta-brand-guide/templates/social.html)
+[Report](https://almohammdin.github.io/hatta-brand-guide/templates/report.html) · [Presentation](https://almohammdin.github.io/hatta-brand-guide/templates/presentation.html) · [Social image](https://almohammdin.github.io/hatta-brand-guide/templates/social.html)
 
 ## Voice and kashida
 

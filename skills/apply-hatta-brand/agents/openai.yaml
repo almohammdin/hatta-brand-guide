@@ -1,5 +1,5 @@
 interface:
-  display_name: "���� ��� ���"
-  short_description: "��� ��� 횫��� ��� ���� ���韘 ���李"
-  default_prompt: "������ $apply-hatta-brand ���� ��� ��� 횫��� ��袟�� ���� ���李 ���� ��� 쨟 ����� �꩟�� ���嵐."
+  display_name: "تطبيق هوية حتى"
+  short_description: "هوية حتى وأسلوب نايف وقواعد الإملاء والكشيدة"
+  default_prompt: "استخدم $apply-hatta-brand لتطبيق هوية حتى وأسلوب الكتابة وقواعد الكشيدة بحسب نطاق هذا العمل ومراجعة النتيجة."
 

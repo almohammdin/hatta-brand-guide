@@ -1,6 +1,6 @@
 # Hatta brand guide
 
-Version 2.3 � 2026-10-30
+Version 2.3 · 2026-10-30
 
 Published at https://almohammdin.github.io/hatta-brand-guide/
 

@@ -6,3 +6,12 @@ html[lang=en] body{font-family:"El Messiri",Arial,sans-serif;line-height:1.75}ht
 @media(prefers-reduced-motion:reduce){html[lang=en] .money-dot{left:50%;right:auto}}
 @media print{.language-switch{display:none!important}html[lang=en] .cover h1{font-size:42px}}
 @media(max-width:620px){.scroll-note{display:none}}
+
+/* Navigation follows the guide's section order. */
+.topbar .nav{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px}
+.topbar .mini-brand{order:0}.topbar .language-switch{order:1}
+.topbar .links{order:2;flex:0 0 100%;width:100%;justify-content:flex-start;gap:4px 18px;padding-bottom:6px}
+.topbar .links a{white-space:nowrap}
+html{scroll-padding-top:180px}
+.editorial-rules,.kashida-rules{scroll-margin-top:0}
+@media(max-width:960px){.topbar .links{flex-wrap:nowrap;overflow-x:auto;gap:16px;scrollbar-width:thin}.topbar .nav{gap:6px 12px}html{scroll-padding-top:150px}}

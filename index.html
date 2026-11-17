@@ -97,6 +97,17 @@
 .type-notes h3{font-size:28px;font-weight:500;color:var(--navy);margin-top:12px}.type-notes ul{padding-inline-start:22px;font-size:15px;line-height:1.9}.type-notes li{margin-bottom:12px}.type-notes details{border-top:1px solid var(--line);padding-top:16px}.type-notes summary{cursor:pointer;color:var(--navy);font-weight:700}.type-notes pre{font:12px/1.8 monospace;overflow:auto;background:#eef1f6;padding:18px;border-radius:10px;text-align:left}
 @media(max-width:700px){.type-system,.type-comparison,.type-application{grid-template-columns:1fr}.type-system .type-card,.type-live,.type-composed{padding:24px}.type-live-head{display:block}.type-live label{display:block;margin-bottom:10px}.type-comparison p{font-size:26px}.type-composed h2{font-size:34px}.type-composed h3,.type-notes h3{font-size:24px}.type-system .secondary .sample{font-size:36px}}
 @media print{.type-live{display:none}.type-system{grid-template-columns:1fr 1fr}.type-card,.type-composed{break-inside:avoid}}
+
+/* 2.3 typography demo: actual Thmanyah font OpenType features; no inserted tatweel. */
+#kashida .kashida-preview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0 0 28px}
+#kashida .kashida-preview-card{padding:20px 22px;background:#fff;border:1px solid var(--line);border-radius:18px;min-width:0}
+#kashida .kashida-preview-card.featured{background:#f9f4e8;border-color:rgba(180,122,45,.45)}
+#kashida .kashida-preview-label{display:block;color:var(--muted);font-size:12px;font-weight:600;margin-bottom:14px}
+#kashida .kashida-preview-sample{font-family:"Thmanyah Sans",Tahoma,sans-serif;font-size:clamp(25px,3vw,38px);font-weight:600;line-height:1.55;color:var(--navy);margin:0 0 12px;font-synthesis:none;letter-spacing:normal;overflow-wrap:break-word}
+#kashida .kashida-preview-card.normal .kashida-preview-sample{font-feature-settings:"salt" 0,"liga" 0}
+#kashida .kashida-preview-card.featured .kashida-preview-sample{font-feature-settings:"salt" 1,"liga" 1;font-variant-ligatures:common-ligatures}
+#kashida .kashida-preview-note{color:var(--muted);font-size:12px;line-height:1.8;margin:0}
+@media(max-width:620px){#kashida .kashida-preview{grid-template-columns:1fr}#kashida .kashida-preview-card{padding:16px}}
 </style><link rel="stylesheet" href="assets/brand-marks.css"><link rel="stylesheet" href="guide-v2.css?v=2.3">
 <link rel="alternate" hreflang="ar" href="https://almohammdin.github.io/hatta-brand-guide/">
 <link rel="alternate" hreflang="en" href="https://almohammdin.github.io/hatta-brand-guide/en.html">
@@ -161,6 +172,10 @@
 
 <div class="kashida-rules" id="kashida">
 <div class="section-head"><div><div class="kicker">الكشيدة والحروف المرسلة</div><h3 class="sans-alt">امتداد محسوب يخدم الكلمة</h3></div><p>نفرق بين توصية مصمم الخط وطريقة تطبيقها في حتى. نحافظ على أصل الخط، ونراجع شكل العبارة في حجمها النهائي.</p></div>
+<div class="kashida-preview" role="group" aria-label="معاينة شكل الكشيدة والحروف المرسلة">
+  <div class="kashida-preview-card normal"><span class="kashida-preview-label">الشكل الافتراضي للنص</span><p class="kashida-preview-sample">شراكة تنمو بثقة</p><p class="kashida-preview-note"><code dir="ltr">"salt" 0, "liga" 0</code></p></div>
+  <div class="kashida-preview-card featured"><span class="kashida-preview-label">العنوان بالحروف المرسلة والكشيدة المدعومة</span><p class="kashida-preview-sample">شراكة تنمو بثقة</p><p class="kashida-preview-note"><code dir="ltr">"salt" 1, "liga" 1</code> · يعتمد ظهور الامتداد على دعم الخط وموضع الحروف</p></div>
+</div>
 <div class="guide-cards">
 <article class="card guide-card"><span class="eyebrow">توصيات ثمانية</span><h3>اختيار الموضع وتفعيل الميزة</h3><ul>
 <li>اجعل الكشيدة المائلة عند آخر حرف وما قبله، واستخدمها باعتدال داخل الكلمات والجمل.</li>
